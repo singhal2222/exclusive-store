@@ -1,36 +1,127 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Exclusive Store
 
-## Getting Started
+Full-stack e-commerce platform with customer storefront, admin dashboard, and in-store POS billing system.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![MongoDB](https://img.shields.io/badge/MongoDB-7-green?logo=mongodb)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?logo=tailwind-css)
 
-```bash
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js 16 (App Router), React, Tailwind CSS
+- **Backend:** Next.js API Routes
+- **Database:** MongoDB + Mongoose
+- **Authentication:** JWT with httpOnly cookies
+- **Payments:** Razorpay
+- **Images:** Cloudinary
+- **Icons:** React Icons
+
+## ✨ Features
+
+### Customer Storefront
+- User signup, login, and email verification
+- Forgot password / reset password with email
+- Product browse, search, and category filter
+- Product details with images and customer reviews
+- Cart and wishlist
+- Checkout with COD and Razorpay payment
+- Order tracking with timeline
+- Address management
+- Account dashboard
+
+### Admin Panel
+- Dashboard with revenue, orders, customers, and products stats
+- Product management (add / edit / delete)
+- Category management
+- Order management with shipping updates and tracking timeline
+- Customer list
+- Coupon management
+- Review moderation
+- Contact messages inbox
+- In-app notification system
+- Store settings
+
+### POS System (Point of Sale)
+- In-store billing for walk-in customers
+- **Retail billing** at MRP
+- **Wholesale billing** with per-product discount entered at billing time
+- Live cart with quantity and discount controls
+- Cash / Card / UPI payment options
+- Bill preview, print, and PDF download
+- POS orders tagged separately in the admin orders list
+- Automatic stock decrement on every sale
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- MongoDB (local or MongoDB Atlas)
+
+### Installation
+
+\`\`\`bash
+git clone https://github.com/singhal2222/exclusive-store.git
+cd exclusive-store
+npm install
+\`\`\`
+
+### Environment Variables
+
+Create a `.env.local` file in the project root with the following variables:
+
+\`\`\`env
+# Database
+MONGODB_URI=your_mongodb_connection_string
+
+# Authentication
+SECRET_KEY=your_jwt_secret_key
+
+# Razorpay
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+
+# Cloudinary
+CLOUDINARY_CLOUD_NAME=your_cloudinary_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+# Email (for verification and password reset)
+EMAIL_USER=your_email
+EMAIL_PASSWORD=your_app_password
+\`\`\`
+
+### Run Locally
+
+\`\`\`bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Seed an Admin User
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+\`\`\`bash
+node scripts/seedAdmin.mjs
+\`\`\`
 
-## Learn More
+## 🔒 Admin Isolation
 
-To learn more about Next.js, take a look at the following resources:
+For data integrity and security, admin accounts are restricted to the admin panel only:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Admins cannot place online orders — they must use the POS system for in-store sales
+- All customer-facing routes are blocked for logged-in admins
+- API-level guards prevent unauthorized order creation by admins
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📸 Screenshots
 
-## Deploy on Vercel
+*Coming soon — screenshots of the storefront, admin dashboard, and POS terminal will be added.*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is built for educational and portfolio purposes.
+
+## 👤 Author
+
+**Yash Singhal**
+- GitHub: [@singhal2222](https://github.com/singhal2222)
