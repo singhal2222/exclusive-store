@@ -20,6 +20,7 @@ Full-stack e-commerce platform with customer storefront, admin dashboard, and in
 ## ✨ Features
 
 ### Customer Storefront
+
 - User signup, login, and email verification
 - Forgot password / reset password with email
 - Product browse, search, and category filter
@@ -31,6 +32,7 @@ Full-stack e-commerce platform with customer storefront, admin dashboard, and in
 - Account dashboard
 
 ### Admin Panel
+
 - Dashboard with revenue, orders, customers, and products stats
 - Product management (add / edit / delete)
 - Category management
@@ -43,6 +45,7 @@ Full-stack e-commerce platform with customer storefront, admin dashboard, and in
 - Store settings
 
 ### POS System (Point of Sale)
+
 - In-store billing for walk-in customers
 - **Retail billing** at MRP
 - **Wholesale billing** with per-product discount entered at billing time
@@ -55,73 +58,13 @@ Full-stack e-commerce platform with customer storefront, admin dashboard, and in
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Node.js 18+
 - MongoDB (local or MongoDB Atlas)
 
 ### Installation
 
-\`\`\`bash
+```bash
 git clone https://github.com/singhal2222/exclusive-store.git
 cd exclusive-store
 npm install
-\`\`\`
-
-### Environment Variables
-
-Create a `.env.local` file in the project root with the following variables:
-
-\`\`\`env
-# Database
-MONGODB_URI=your_mongodb_connection_string
-
-# Authentication
-SECRET_KEY=your_jwt_secret_key
-
-# Razorpay
-RAZORPAY_KEY_ID=your_razorpay_key_id
-RAZORPAY_KEY_SECRET=your_razorpay_key_secret
-
-# Cloudinary
-CLOUDINARY_CLOUD_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-
-# Email (for verification and password reset)
-EMAIL_USER=your_email
-EMAIL_PASSWORD=your_app_password
-\`\`\`
-
-### Run Locally
-
-\`\`\`bash
-npm run dev
-\`\`\`
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Seed an Admin User
-
-\`\`\`bash
-node scripts/seedAdmin.mjs
-\`\`\`
-
-## 🔒 Admin Isolation
-
-For data integrity and security, admin accounts are restricted to the admin panel only:
-
-- Admins cannot place online orders — they must use the POS system for in-store sales
-- All customer-facing routes are blocked for logged-in admins
-- API-level guards prevent unauthorized order creation by admins
-
-## 📸 Screenshots
-
-*Coming soon — screenshots of the storefront, admin dashboard, and POS terminal will be added.*
-
-## 📝 License
-
-This project is built for educational and portfolio purposes.
-
-## 👤 Author
-
-**Yash Singhal**
-- GitHub: [@singhal2222](https://github.com/singhal2222)
