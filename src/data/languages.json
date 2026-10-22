@@ -1,0 +1,58 @@
+{
+  "achives": [
+    {
+      "icon": "store",
+      "quantity": "10.5k",
+      "quality": "Sallers active our site"
+    },
+    {
+      "icon": "dollar",
+      "quantity": "33k",
+      "quality": "Mopnthly Produduct Sale"
+    },
+    {
+      "icon": "shopping",
+      "quantity": "45.5k",
+      "quality": "Customer active in our site"
+    },
+    {
+      "icon": "money",
+      "quantity": "2.5M",
+      "quality": "Anual gross sale in our site"
+    }
+  ],
+  "services": [
+    {
+      "icon": "delivery",
+      "name": "FREE AND FAST DELIVERY",
+      "desc": "Free delivery for all orders over ₹499"
+    },
+    {
+      "icon": "customer",
+      "name": "24/7 CUSTOMER SERVICE",
+      "desc": "Friendly 24/7 customer support"
+    },
+    {
+      "icon": "guarantee",
+      "name": "MONEY BACK GUARANTEE",
+      "desc": "We reurn money within 30 days"
+    }
+  ],
+  "managements": [
+    {
+      "image": "/assets/management-1.png",
+      "name": "Tom Cruise",
+      "post": "Founder & Chairman"
+    },
+    {
+      "image": "/assets/management-2.png",
+      "name": "Emma Watson",
+      "post": "Managing Director"
+    },
+    {
+      "image": "/assets/management-3.png",
+      "name": "Will Smith",
+      "post": "Product Designer"
+    }
+  ]
+}

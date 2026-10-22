@@ -1,0 +1,86 @@
+{
+    "supports": [
+        {
+            "title": "Support"
+        },
+        {
+            "name": "Devout Tech Consultants, 6th Floor, Vista Tower, Phase-8A, Sector-75, Mohali",
+            "path": "#"
+        },
+        {
+            "name": "ysinghal157@gmail.com",
+            "path": "mailto:ysinghal157@gmail.com"
+        },
+        {
+            "name": "+91-9389602911",
+            "path": "tel:+919389602911"
+        }
+    ],
+    "accounts": [
+        {
+            "title": "Account"
+        },
+        {
+            "name": "My Account",
+            "path": "/account"
+        },
+        {
+            "name": "Login / Register",
+            "path": "/auth/login"
+        },
+        {
+            "name": "Cart",
+            "path": "/cart"
+        },
+        {
+            "name": "Wishlist",
+            "path": "/account/wishlist"
+        },
+        {
+            "name": "Shop",
+            "path": "/shop"
+        }
+    ],
+    "quick-links": [
+        {
+            "title": "Quick Link"
+        },
+        {
+            "name": "Shop All",
+            "path": "/shop"
+        },
+        {
+            "name": "About Us",
+            "path": "/about"
+        },
+        {
+            "name": "Contact",
+            "path": "/contact"
+        },
+        {
+            "name": "My Orders",
+            "path": "/account/orders"
+        }
+    ],
+    "legal": [
+        {
+            "title": "Legal"
+        },
+        {
+            "name": "Privacy Policy",
+            "path": "/privacy-policy"
+        },
+        {
+            "name": "Terms & Conditions",
+            "path": "/terms"
+        },
+        {
+            "name": "Refund Policy",
+            "path": "/refund-policy"
+        },
+        {
+            "name": "Shipping Policy",
+            "path": "/shipping-policy"
+        }
+    ]
+}
